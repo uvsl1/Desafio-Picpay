@@ -1,5 +1,6 @@
 package com.desafioPicpay.Desafio.PicPay.domain;
 
+import com.desafioPicpay.Desafio.PicPay.dto.UserDTO;
 import jakarta.persistence.*;
 
 import java.math.BigDecimal;
@@ -32,6 +33,15 @@ public class User {
 
     public User(Long id, String userName, String cpf, String email, String password, BigDecimal balance, UserType userType) {
         this.id = id;
+        this.userName = userName;
+        this.cpf = cpf;
+        this.email = email;
+        this.password = password;
+        this.balance = balance;
+        this.userType = userType;
+    }
+
+    public User(UserDTO dto) {
         this.userName = userName;
         this.cpf = cpf;
         this.email = email;
