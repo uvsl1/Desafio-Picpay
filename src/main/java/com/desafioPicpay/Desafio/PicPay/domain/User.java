@@ -42,13 +42,14 @@ public class User {
     }
 
     public User(UserDTO dto) {
-        this.userName = userName;
-        this.cpf = cpf;
-        this.email = email;
-        this.password = password;
-        this.balance = balance;
-        this.userType = userType;
+        this.userName = dto.userName();
+        this.cpf = dto.cpf();
+        this.email = dto.email();
+        this.password = dto.password();
+        this.balance = dto.balance();
+        this.userType = dto.userType();
     }
+
 
     public Long getId() {
         return id;

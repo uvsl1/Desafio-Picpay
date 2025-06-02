@@ -1,7 +1,6 @@
 package com.desafioPicpay.Desafio.PicPay.services;
 
 import com.desafioPicpay.Desafio.PicPay.domain.User;
-import com.desafioPicpay.Desafio.PicPay.domain.UserType;
 import com.desafioPicpay.Desafio.PicPay.dto.UserDTO;
 import com.desafioPicpay.Desafio.PicPay.repositories.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
